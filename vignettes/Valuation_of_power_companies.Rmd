@@ -1,0 +1,23 @@
+---
+title: "Valuation_of_power_companies"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Valuation_of_power_companies}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(tidyverse)
+```
+## Introduction
+
+This package allows the user to valuate Norwegian power companies with flexibility to input parameters as well as the option to manually configure input or use a wrapper that calculates all key figures. This vignette will firstly present the wrapper, then the additional possibilities that are possible through manual input
+
+```{r setup}
+library(powervaluation)
+```
